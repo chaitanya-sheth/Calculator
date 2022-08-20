@@ -19,8 +19,8 @@ Array.from(buttons).forEach((button)=>{
       }
       else{
           string = string + e.target.innerHTML;
-          if(string.length > 18){
-              string = "e                 "
+          if(string.length > 16){
+              string = "e               "
           }
           document.querySelector('.text').innerHTML = string;
       }
@@ -31,8 +31,8 @@ Array.from(buttons).forEach((button)=>{
 document.addEventListener('keydown', function(event) {
     if(event.key == 1 || event.key == 2 ||event.key == 3||event.key == 4||event.key == 5||event.key == 6||event.key == 7||event.key == 8||event.key == 9||event.key == 0 || event.key == "+" ||event.key == "-" ||event.key == "*" ||event.key == "/") {
         string = string+event.key;
-        if(string.length > 18){
-            string = "e                 " 
+        if(string.length > 16){
+            string = "e               " 
         }
         document.querySelector('.text').innerHTML = string;
     }
