@@ -28,6 +28,7 @@ body{
     height: 50px;
     border-radius: 50%;
     border-style: none;
+    outline: none;
     margin-left: 10px;
     margin-bottom: 10px;
     background-color: #D1D1D1;
