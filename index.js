@@ -7,6 +7,7 @@ Array.from(buttons).forEach((button)=>{
       if(e.target.innerHTML == '='){
           a = eval(string);
           document.querySelector('.text').innerHTML = string + "  =  " + a;
+          string=a;
       }
       else if(e.target.innerHTML == 'C'){
         string = document.querySelector('.text').innerHTML;
@@ -39,6 +40,7 @@ document.addEventListener('keydown', function(event) {
     else if(event.key == "=" || event.key == "Enter"){
         a = eval(string);
         document.querySelector('.text').innerHTML = string + "  =  " + a;
+        string=a;
     }
     else if(event.key == "Backspace"){
         string="";
